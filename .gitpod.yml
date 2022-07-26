@@ -1,2 +1,1 @@
-image:
-  file: .gitpod.Dockerfile
+image: ghcr.io/garodriguezlp/getting-to-know-the-terminal:main
