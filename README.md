@@ -116,3 +116,20 @@ Install-Module -Name PSReadLine -Force
 ```
 
 ### Playing with a tuned `fish` shell
+
+- Install `spring-boot-cli` using `SDKMAN`
+
+```bash
+sdk install springboot
+```
+
+- Enable completions
+
+```bash
+echo ". \$SDKMAN_CANDIDATES_DIR/springboot/current/shell-completion/bash/spring" >> $HOME/.bashrc
+```
+
+```bash
+spring init -j 11 -d web demo
+```
+
