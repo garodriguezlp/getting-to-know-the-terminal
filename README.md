@@ -41,6 +41,8 @@ type git
 
 ### Configuring the shells
 
+- Talk about PERFORMANCE!!!!
+
 - `oh-my-zsh`
 
 ```bash
