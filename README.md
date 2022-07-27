@@ -1,3 +1,5 @@
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/garodriguezlp/getting-to-know-the-terminal)
+
 # Getting to Know the Terminal
 
 ## Demos
