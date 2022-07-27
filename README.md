@@ -1,31 +1,47 @@
 # getting-to-know-the-terminal
 
-## Demo
+## Demos
 
-1. Open the following shells using `tmux`
+### Multiple shells in a single host
+
+- Exploring all the installed shells
 
 ```bash
 tmux new-session \; split-window -h "zsh" \; split-window -v "fish" \; select-pane -t 0 \; split-window -v "pwsh" \; attach
 ```
 
-2. Built-ins, Scripts, Aliases, Functions and Programs 
+### Built-ins, Scripts, Aliases, Functions and Programs 
+
+- Built-ins
 
 ```bash
-# Built-ins
 type help
 man builtins
-# Alias
+```
+
+- Aliases
+
+```bash
 type l
 alias
-# Function
+```
+- Functions
+
+```bash
 function hello { echo Hello World; }; hello
 type hello
-# Programs and Scripts
+```
+
+- Programs and Scripts
+
+```bash
 type ./script.sh
 type git
 ```
 
-3. Install `oh-my-zsh`
+### Configuring the shells
+
+- Install `oh-my-zsh`
 
 ```bash
 # Installation  
@@ -33,7 +49,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # Inspecting the zshrc
 $EDITOR ~/.zshrc
 ```
-4. Install `oh-my-bash`
+- Install `oh-my-bash`
 
 ```bash
 # Installation  
@@ -41,7 +57,8 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
 # Inspecting the zshrc
 $EDITOR ~/.bashrc
 ```
-5. Install `oh-my-fish`
+
+- Install `oh-my-fish`
 
 ```bash
 # Installation  
