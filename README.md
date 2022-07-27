@@ -41,7 +41,7 @@ type git
 
 ### Configuring the shells
 
-- Install `oh-my-zsh`
+- `oh-my-zsh`
 
 ```bash
 # Installation  
@@ -49,7 +49,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # Inspecting the zshrc
 $EDITOR ~/.zshrc
 ```
-- Install `oh-my-bash`
+- `oh-my-bash`
 
 ```bash
 # Installation  
@@ -58,11 +58,52 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
 $EDITOR ~/.bashrc
 ```
 
-- Install `oh-my-fish`
+- `oh-my-fish`
 
 ```bash
 # Installation  
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 # Inspecting the zshrc
 $EDITOR ~/.config/fish/conf.d/omf.fish   
+```
+
+### Configuring the prompt
+
+- Install a NerdFont on you local machine (the one running the browser) from [nerdfonts.com](https://www.nerdfonts.com/)
+
+- Change the terminal front for you `vscode`. Example
+
+```json
+    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+```
+
+- Install `starship`
+
+```bash
+curl -sS https://starship.rs/install.sh | sh
+```
+
+- Enable `starship` for `powershell`
+
+```ps1
+# Create the $PROFILE file
+ni $PROFILE -Force
+
+# Edit the $PROFILE file
+& $env:EDITOR $PROFILE
+
+# Paste the following contents into the $PROFILE file
+#   Invoke-Expression (&starship init powershell)
+```
+
+- Install latest version of `PSReadLine` and enabling one nice feature
+
+```ps1
+Install-Module -Name PowerShellGet -Force
+Install-Module -Name PSReadLine -Force
+
+# Paste the following contents into the $PROFILE file
+#   Set-PSReadLineOption -EditMode Emacs `
+#       -PredictionSource History `
+#       -PredictionViewStyle ListView
 ```
