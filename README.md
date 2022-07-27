@@ -59,6 +59,10 @@ $EDITOR ~/.bashrc
 
 # Modify the shell variable that controls the theme
 #   OSH_THEME="random"
+
+# Bring old stuff we'll need in the future
+$EDITOR ~/.bashrc.omb-*
+#   for i in $(ls -A $HOME/.bashrc.d/); do source $HOME/.bashrc.d/$i; done
 ```
 
 - `oh-my-fish`
