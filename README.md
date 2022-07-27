@@ -107,3 +107,5 @@ Install-Module -Name PSReadLine -Force
 #       -PredictionSource History `
 #       -PredictionViewStyle ListView
 ```
+
+### Playing with a tuned `fish` shell
