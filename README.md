@@ -1,4 +1,4 @@
-# getting-to-know-the-terminal
+# Getting to Know the Terminal
 
 ## Demos
 
