@@ -177,3 +177,14 @@ sudo apt install fzf
 ```bash
 $EDITOR ~/.zshrc
 ```
+
+### Learn More
+
+#### References
+- https://github.com/chubin/cheat.sh#usage
+- https://github.com/tldr-pages/tldr#similar-projects
+- https://github.com/cheat/cheat
+
+```bash
+curl cht.sh/curl
+```
