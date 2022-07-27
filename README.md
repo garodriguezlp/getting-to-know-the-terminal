@@ -181,10 +181,16 @@ $EDITOR ~/.zshrc
 ### Learn More
 
 #### References
+
 - https://github.com/chubin/cheat.sh#usage
 - https://github.com/tldr-pages/tldr#similar-projects
 - https://github.com/cheat/cheat
+- https://github.com/mstruebing/tldr#docker-mstruebingtldr
 
 ```bash
 curl cht.sh/curl
+```
+```bash
+docker run -it mstruebing/tldr tldr tar
+alias tldr="docker run -it mstruebing/tldr tldr"
 ```
