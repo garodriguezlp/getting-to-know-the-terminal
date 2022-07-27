@@ -115,23 +115,25 @@ Install-Module -Name PSReadLine -Force
 #       -PredictionViewStyle ListView
 ```
 
-### Playing with a tuned `fish` shell
+### Playing with the shells
 
-- Install `spring-boot-cli` using `SDKMAN`
+- Install `spring-boot-cli` using `SDKMAN` in `bash`
 
 ```bash
 sdk install springboot
 ```
 
-- Enable completions (Sourcing files)
+- Enable completions (Sourcing files) for `bash`
 
 ```bash
 echo ". \$SDKMAN_CANDIDATES_DIR/springboot/current/shell-completion/bash/spring" >> $HOME/.bashrc
 ```
 
 ```bash
-spring init -d web demo
+spring init -d web .
 ```
+
+- Add a new REST Controller
 
 ```java
     @RestController
@@ -143,3 +145,4 @@ spring init -d web demo
     }
 ```
 
+- Run the app from `fish`
