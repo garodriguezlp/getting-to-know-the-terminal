@@ -123,7 +123,7 @@ Install-Module -Name PSReadLine -Force
 sdk install springboot
 ```
 
-- Enable completions
+- Enable completions (Sourcing files)
 
 ```bash
 echo ". \$SDKMAN_CANDIDATES_DIR/springboot/current/shell-completion/bash/spring" >> $HOME/.bashrc
@@ -131,5 +131,15 @@ echo ". \$SDKMAN_CANDIDATES_DIR/springboot/current/shell-completion/bash/spring"
 
 ```bash
 spring init -d web demo
+```
+
+```java
+    @RestController
+    public static class HelloWorldController {
+        @GetMapping("/hello")
+        public String sayHello() {
+            return "Hello World!!";
+        }
+    }
 ```
 
