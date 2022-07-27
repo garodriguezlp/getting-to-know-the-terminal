@@ -130,6 +130,6 @@ echo ". \$SDKMAN_CANDIDATES_DIR/springboot/current/shell-completion/bash/spring"
 ```
 
 ```bash
-spring init -j 11 -d web demo
+spring init -d web demo
 ```
 
