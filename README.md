@@ -56,6 +56,9 @@ $EDITOR ~/.zshrc
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 # Inspecting the zshrc
 $EDITOR ~/.bashrc
+
+# Modify the shell variable that controls the theme
+#   OSH_THEME="random"
 ```
 
 - `oh-my-fish`
